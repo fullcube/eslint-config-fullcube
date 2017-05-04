@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-fullcube",
   "description": "ESLint config for fullcube",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "base.js",
   "author": "Tom Kirkpatrick @mrfelton",
   "contributors": [
@@ -19,5 +19,16 @@
   "homepage": "https://github.com/fullcube/eslint-config-fullcube",
   "dependencies": {
     "eslint-config-strict": "^13.0.0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "condition-circle": "^1.5.0",
+    "semantic-release": "^6.3.2"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
