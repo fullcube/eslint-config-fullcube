@@ -1,5 +1,7 @@
 # eslint-config-fullcube
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fullcube/eslint-config-fullcube.svg)](https://greenkeeper.io/)
+
 > Fullcube [ESLint](http://eslint.org) [shareable configurations](http://eslint.org/docs/developer-guide/shareable-configs).
 
 ## Installation
