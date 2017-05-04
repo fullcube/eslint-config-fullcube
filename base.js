@@ -87,6 +87,9 @@ module.exports = {
     'semi': ['error', 'never'],
 
     // Require dangling commas.
-    'comma-dangle': [ 'error', 'always-multiline' ]
+    'comma-dangle': [ 'error', 'always-multiline' ],
+
+    // Prefer destructuring for objects.
+    'prefer-destructuring': ['error', { array: false, object: true }],
   }
 };
