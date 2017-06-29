@@ -17,18 +17,18 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/fullcube/eslint-config-fullcube",
-  "dependencies": {
-    "eslint-config-strict": "^13.0.0"
-  },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "echo \"No test specified\" && exit 0"
   },
+  "dependencies": {
+    "eslint-config-strict": "13.0.0"
+  },
   "devDependencies": {
-    "@bubltechnology/customizable-commit-analyzer": "^1.0.2-0",
-    "condition-circle": "^1.5.0",
-    "conventional-commit-types": "^2.1.0",
-    "semantic-release": "^6.3.2"
+    "@bubltechnology/customizable-commit-analyzer": "1.0.2-0",
+    "condition-circle": "1.5.0",
+    "conventional-commit-types": "2.1.0",
+    "semantic-release": "^6.3.6"
   },
   "config": {
     "commitTypeMap": {
