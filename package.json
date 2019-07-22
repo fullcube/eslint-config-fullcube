@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-fullcube",
   "description": "ESLint config for fullcube",
-  "version": "4.0.0",
+  "version": "0.0.0-development",
   "main": "base.js",
   "author": "Tom Kirkpatrick @mrfelton",
   "contributors": [
@@ -18,7 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/fullcube/eslint-config-fullcube",
   "scripts": {
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
 module.exports = {
-  'extends': [ 'fullcube' ],
+  'extends': ['fullcube'],
   'env': {
     'mocha': true,
   },
@@ -7,5 +7,5 @@ module.exports = {
     'prefer-arrow-callback': ['off'],
     'func-names': ['off'],
     'no-sync': ['off'],
-  }
-};
+  },
+}
