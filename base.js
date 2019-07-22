@@ -25,7 +25,7 @@ module.exports = {
     'complexity': ['off'],
 
     // prefer kebab-case for file names
-    'filenames/match-exported': [2, 'kebab'],
+    'filenames/match-regex': [2, '^[0-9a-z-.]+$', true],
 
     // blacklist certain identifiers to prevent them being used
     'id-blacklist': ['off'],
