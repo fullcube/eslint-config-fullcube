@@ -10,6 +10,14 @@ jobs:
           name: 'Install dependencies'
           command: npm i
       - run:
+          name: 'Setup environmental variable for NPM'
+          command: |
+            echo 'export NPM_TOKEN="cdf2f933-2ec1-45a9-9639-6be4f13d80e3"' >> $BASH_ENV
+      - run:
+          name: 'Setup environmental variable for GitHub'
+          command: |
+            echo 'export GH_TOKEN="9e055774d01e3e69ee09ac8374d5e468144e3267"' >> $BASH_ENV
+      - run:
           name: 'Make release'
           command: npm run semantic-release
 workflows:
