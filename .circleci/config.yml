@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: npm run semantic-release
+          command: npm i && npm run semantic-release
 workflows:
   Release Workflow:
     jobs:
