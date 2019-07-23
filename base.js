@@ -85,10 +85,10 @@ module.exports = {
     // allow padding at the top and bottom of blocks
     'padded-blocks': ['off'],
 
-    // [refer destructuring for objects
+    // prefer destructuring for objects
     'prefer-destructuring': ['error', {
       array: false,
-      object: true,
+      object: false,
     }],
 
     // don't prefer Reflect
