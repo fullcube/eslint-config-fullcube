@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  release/release:
+    docker:
+    - image: circleci/node:12.6
+    steps:
+    - run:
+        command: npm run semantic-release
+workflows:
+  Release Workflow:
+    jobs:
+    - release/release
+  version: 2
