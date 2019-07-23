@@ -25,7 +25,6 @@
     "eslint-config-strict": "^14.0.1"
   },
   "devDependencies": {
-    "@bubltechnology/customizable-commit-analyzer": "^1.0.1",
     "condition-circle": "^2.0.2",
     "conventional-commit-types": "^2.1.1",
     "semantic-release": "^15.13.18"
@@ -49,7 +48,6 @@
     }
   },
   "release": {
-    "verifyConditions": "condition-circle",
-    "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
+    "verifyConditions": "condition-circle"
   }
 }
