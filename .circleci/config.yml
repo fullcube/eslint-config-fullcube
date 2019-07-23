@@ -1,27 +1,13 @@
 version: 2
 jobs:
-  release/release:
+  build:
     docker:
-      - image: circleci/node:12.6
+      - image: 'circleci/node:latest'
     steps:
-      # moves source code to working directory
       - checkout
       - run:
-          name: 'Install dependencies'
-          command: npm i
+          name: install
+          command: npm install
       - run:
-          name: 'Setup environmental variable for NPM'
-          command: |
-            echo 'export NPM_TOKEN="cdf2f933-2ec1-45a9-9639-6be4f13d80e3"' >> $BASH_ENV
-      - run:
-          name: 'Setup environmental variable for GitHub'
-          command: |
-            echo 'export GH_TOKEN="9e055774d01e3e69ee09ac8374d5e468144e3267"' >> $BASH_ENV
-      - run:
-          name: 'Make release'
-          command: npm run semantic-release
-workflows:
-  Release Workflow:
-    jobs:
-      - release/release
-  version: 2
+          name: release
+          command: npm run semantic-release || true
