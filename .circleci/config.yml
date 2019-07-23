@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:12.6
     steps:
       - run:
-        command: npm run semantic-release
+          command: npm run semantic-release
 workflows:
   Release Workflow:
     jobs:
