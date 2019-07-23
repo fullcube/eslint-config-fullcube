@@ -4,9 +4,15 @@ jobs:
     docker:
       - image: circleci/node:12.6
     steps:
+      # moves source code to working directory
       - checkout
       - run:
-          command: npm i && npm run semantic-release
+          name: 'Install dependencies'
+          command: npm i
+      - run:
+          name: 'Setup github credentials'
+          command: |
+            echo 'export GH_TOKEN="FOO"' >> $BASH_ENV
 workflows:
   Release Workflow:
     jobs:
