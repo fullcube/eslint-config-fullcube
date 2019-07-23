@@ -11,7 +11,7 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
 
     // Enforces Stroustrup style brace formatting
-    'brace-style': ['error', 'stroustrup'],
+    'brace-style': ['error'],
 
     // Do not enforce camel case property names.
     'camelcase': ['error', {
