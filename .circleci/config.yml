@@ -9,5 +9,6 @@ jobs:
 workflows:
   Release Workflow:
     jobs:
+    - checkout
     - release/release
   version: 2
