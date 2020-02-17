@@ -27,7 +27,7 @@
   "devDependencies": {
     "condition-circle": "^2.0.2",
     "conventional-commit-types": "^2.1.1",
-    "semantic-release": "^15.13.18"
+    "semantic-release": "^17.0.4"
   },
   "config": {
     "commitTypeMap": {
